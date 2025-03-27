@@ -1,0 +1,111 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #191719 !important;
+  color: #e1e1e1;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  color: #70a1ff;
+}
+
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #8c7ae6;
+  font-weight: 600;
+}
+
+.header p {
+  color: #a4b0be;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8c7ae6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7266ba;
+}
+
+/* Override Bootstrap dark mode */
+.form-control {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid #2f3542 !important;
+  color: #dcdde1 !important;
+}
+
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: #8c7ae6 !important;
+  color: #dcdde1 !important;
+  box-shadow: 0 0 0 0.2rem rgba(140, 122, 230, 0.25) !important;
+}
+
+.btn-outline-secondary {
+  color: #a4b0be !important;
+  border-color: #3d3d3d !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #3d3d3d !important;
+  color: #dcdde1 !important;
+}
+
+.spinner-border {
+  color: #8c7ae6 !important;
+}
+
+/* Fix Bootstrap container padding */
+.container-fluid {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+/* Fix row gutters */
+.row {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+/* Ensure dark background extends to full page */
+#root {
+  background-color: #191719;
+}
